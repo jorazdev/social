@@ -1,0 +1,22 @@
+https://social.com {
+	# Set this path to your site's directory:
+	root * /srv/public/index.html
+	
+	file_server
+
+	#try_files {path} {path}/ /index.html
+	
+	tls /etc/cert/social/social.com+4.pem /etc/cert/social/social.com+4-key.pem
+
+	# Enable Gzip compression:
+	encode gzip
+
+	reverse_proxy web:3000 {
+		header_down Strict-Transport-Security max-age=31536000;
+	}
+
+	# Enable HTTP request logging
+	log {
+		output file /var/log/caddy/social.log
+	}
+}
