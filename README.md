@@ -29,7 +29,7 @@
 Une application web fait avec Nestjs framework nodejs et Vuejs 3 pour le front end. <br/>
 Le template utilisé vient du développeur loicfarel disponible sur https://github.com/loicfarel/social et https://foscio.vercel.app/ <br/><br/>
 
-L'objectif, c'est de montrer l'utilisation de Nestjs avec le mode Server Static en plaçant Vuejs 3 comme son front par defaut ainsi que<br/>
+L'objectif, c'est de montrer l'utilisation de Nestjs avec le mode Server Static en plaçant Vuejs 3 comme son front par défaut ainsi que<br/>
 l'utilisation de Vuejs 3 avec la composition API, le composable et la transformation de chaque division html en composant component vuejs <br/><br/>
 
 La base de données utilisée est le postgresSql en utilisant le container docker.
@@ -57,6 +57,10 @@ $ docker-compose exec web /bin/sh => yarn watch
 
 ```
 
+## View the app
+```bash
+https://social.com:444
+```
 ## Contact
 
 ```bash
