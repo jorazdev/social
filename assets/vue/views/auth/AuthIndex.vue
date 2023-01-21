@@ -20,7 +20,9 @@
                 class="link">
                 Sign Up
             </RouterLink>
+            
         </card-form>
+        <p class="contact">Email: jorazdev@gmail.com <br/> Tél: +261 32 97 740 62</p>
     </div>
 </template>
 
@@ -60,6 +62,13 @@
         }
         .link{
             font-size: 12px;
+        }
+
+        .contact{
+            margin-top: 44em;
+            margin-left: -14em;
+            font-size: 12px;
+            font-weight: 600;
         }
     }
 

@@ -57,10 +57,16 @@ $ docker-compose exec web /bin/sh => yarn watch
 
 ```
 
-## View the app
+## View the app on development
 ```bash
 https://social.com:444
 ```
+
+## View the app on production
+```bash
+https://social.jorazdev.com
+```
+
 ## Contact
 
 ```bash
