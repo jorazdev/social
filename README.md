@@ -41,6 +41,10 @@ La base de données utilisée est le postgresSql en utilisant le container docke
 # Ajouter le domaine social.com dans le fichier hosts
 $ cd /etc/hosts => 127.0.0.1 social.com
 
+#Extraire les fichiers dans le dossier cert.zip et les coller dans:
+$ docker/caddy/social.com+4.pem
+$ docker/caddy/social.com+4-key.pem
+
 # Installer les packages Nestjs et Vuejs 3
 $ npm install
 ```
