@@ -38,3 +38,4 @@ lerna-debug.log*
 /public/build
 /docker/caddy/social.com+4.pem
 /docker/caddy/social/social.com+4-key.pem
+docker/caddy/social.com+4-key.pem
