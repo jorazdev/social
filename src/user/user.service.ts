@@ -36,7 +36,7 @@ export class UserService {
         // const user:any = await this.userRepository.findOneBy({ id: id })
         // await this.userRepository.remove(user)
 
-        // return { user }
+         return { id }
     }
 
     async signin(signinDto: SigninDto){
