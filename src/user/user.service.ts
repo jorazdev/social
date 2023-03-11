@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User } from 'src/entity/user';
+import { User } from '../entity/user';
 import { Repository } from 'typeorm';
 import { SignupDto } from './dto/SignupDto';
 import * as bcrypt from 'bcrypt';
-import { UserEnum } from 'src/enums/user.enum';
+import { UserEnum } from '../enums/user.enum';
 import { SigninDto } from './dto/SigninDto';
 import { JwtService } from '@nestjs/jwt';
 
@@ -32,11 +32,11 @@ export class UserService {
     }
 
     async removeUser(id: number){
+        
+        // const user:any = await this.userRepository.findOneBy({ id: id })
+        // await this.userRepository.remove(user)
 
-        const user:any = await this.userRepository.findOneBy({ id: id })
-        await this.userRepository.remove(user)
-
-        return { user }
+        // return { user }
     }
 
     async signin(signinDto: SigninDto){
